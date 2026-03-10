@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<club>
+    <abstract_method name="getPlayerStats">
+        <access>public</access>
+        <parameters>
+            <argument type="string">playerName</argument>
+        </parameters>
+        <return>json</return>
+        <throws>
+            <exception>PlayerNotFoundException</exception>
+        </throws>
+    </abstract_method>
+
+    <abstract_method name="addNewPlayer">
+        <access>private</access>
+        <parameters>
+            <argument type="string">playerName</argument>
+            <argument type="int">playerAge</argument>
+            <argument type="string">position</argument>
+        </parameters>
+        <return>boolean</return>
+        <throws>
+            <exception>DuplicatePlayerException</exception>
+            <exception>InvalidAgeException</exception>
+        </throws>
+    </abstract_method>
+
+    <abstract_method name="getLeagueStanding">
+        <access>public</access>
+        <return>int</return>
+    </abstract_method>
+</club>
